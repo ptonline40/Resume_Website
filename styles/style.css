@@ -169,3 +169,17 @@ a {
     padding-left: 0;
   }
 }
+
+.img-zoom-container {
+  width: 150px; /* Set desired container size */
+  height: 150px;
+  overflow: hidden; /* Ensures zoomed image stays inside the frame */
+  border-radius: 50%; /* Optional: makes image circular for profile pics */
+}
+
+.img-zoom-container img {
+  width: 100%; /* Image fills container */
+  height: 100%;
+  object-fit: cover; /* Prevents image distortion */
+  transform: scale(1.8); /* Adjust '1.15' for more/less zoom */
+}
